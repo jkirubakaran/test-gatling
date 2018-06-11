@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<salesTransaction>
+    <salesTransactionId>C4E4AGFiSAL</salesTransactionId>
+    <type>Create</type>
+    <sourceSalesTransactionId />
+    <originalSalesTransactionId />
+    <dateTime>2018-04-03T21:39:00Z</dateTime>
+    <utcOffset>-07:00</utcOffset>
+    <msrUsageCode>Y</msrUsageCode>
+    <merchantId />
+    <brandCode>SBUX</brandCode>
+    <countryCode>USA</countryCode>
+    <salesOrder>
+        <salesOrderId>C4E4AGFiSAL</salesOrderId>
+        <storeNumber>003316</storeNumber>
+        <locale>EN-US</locale>
+        <registerNumber>02</registerNumber>
+        <checkNumber>4958</checkNumber>
+        <receiptNumber>661274</receiptNumber>
+        <currencyCode>USD</currencyCode>
+        <channelType>Cafe</channelType>
+        <subChannelType />
+        <preparationType>ConsumeOutOfStore</preparationType>
+        <discounts />
+        <lineItems>
+            <lineItem>
+                <skuNumber>11035163</skuNumber>
+                <name>VT GREEN ICED TEA</name>
+                <qty>1</qty>
+                <priceAmount>295</priceAmount>
+                <discounts />
+                <types />
+                <childLineItems />
+            </lineItem>
+            <lineItem>
+                <skuNumber>169888</skuNumber>
+                <name>RELOAD CARD</name>
+                <qty>1</qty>
+                <priceAmount>3000</priceAmount>
+                <discounts />
+                <types />
+                <childLineItems />
+            </lineItem>
+        </lineItems>
+        <tenders>
+            <tender>
+                <type>SBUX Card</type>
+                <amount>168</amount>
+                <currencyCode>USD</currencyCode>
+                <cardNumber>6115970098425799</cardNumber>
+                <memberUId>12565232152</memberUId>
+                <tenderId>C4E4AGFiVKP</tenderId>
+                <entryMethodType>SvcMsrSwipe</entryMethodType>
+            </tender>
+            <tender>
+                <type>VISA</type>
+                <amount>3000</amount>
+            </tender>
+            <tender>
+                <type>SBUX Card</type>
+                <amount>157</amount>
+                <currencyCode>USD</currencyCode>
+                <cardNumber>6115970098425799</cardNumber>
+                <memberUId>12565232152</memberUId>
+                <tenderId>C4E4AGFiiRe</tenderId>
+                <entryMethodType>SvcManualEntry</entryMethodType>
+            </tender>
+        </tenders>
+        <orderSummary>
+            <subtotalAmount>3295</subtotalAmount>
+            <totalDiscountAmount>0</totalDiscountAmount>
+            <totalTaxAmount>30</totalTaxAmount>
+            <totalAmount>3325</totalAmount>
+            <taxes>
+                <tax>
+                    <name>Tax 10%</name>
+                    <amount>30</amount>
+                </tax>
+            </taxes>
+            <receiptLines />
+        </orderSummary>
+    </salesOrder>
+    <loyaltyPartner>N</loyaltyPartner>
+</salesTransaction>
