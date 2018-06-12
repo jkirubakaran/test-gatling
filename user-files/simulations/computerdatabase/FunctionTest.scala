@@ -22,7 +22,8 @@ import scala.concurrent.duration._
 class FunctionTest extends Simulation {
 
   val httpConf = http
-    .baseURL("https://jebfuncappjava.azurewebsites.net") // Here is the root for all relative URLs
+    //.baseURL("https://jebfuncappjava.azurewebsites.net") // Here is the root for all relative URLs
+    .baseURL("http://localhost:3000")
     .acceptLanguageHeader("en-US,en;q=0.5")
     .acceptEncodingHeader("gzip, deflate")
     .userAgentHeader("Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:16.0) Gecko/20100101 Firefox/16.0")
@@ -30,7 +31,8 @@ class FunctionTest extends Simulation {
   
   val scn = scenario("Demo POST XML to API") // A scenario is a chain of requests and pauses
     .exec(http("post request") // Here's an example of a POST request
-      .get("/api/HttpTriggerJS1?code=MN9FasfEhVNgRp4LTRtrFv33/Wp2naP4DsXR9AjbaWl2GlYgjbGAqQ==&name=boo")
+      .get("/")
+      //.get("/api/HttpTriggerJS1?code=MN9FasfEhVNgRp4LTRtrFv33/Wp2naP4DsXR9AjbaWl2GlYgjbGAqQ==&name=boo")
       //.header(HttpHeaderNames.ContentType, HttpHeaderValues.ApplicationXml)
       //.header(HttpHeaderNames.Accept, HttpHeaderValues.ApplicationXml)
       //.body(RawFileBody("test.xml"))
