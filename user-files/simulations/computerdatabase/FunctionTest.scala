@@ -38,6 +38,6 @@ class FunctionTest extends Simulation {
       //.body(RawFileBody("test.xml"))
     )
 
-  setUp(scn.inject(constantUsersPerSec(4) during (60 seconds)).protocols(httpConf))
+  setUp(scn.inject(constantUsersPerSec(100) during (120 seconds)).protocols(httpConf))
 
 }
