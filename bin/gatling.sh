@@ -32,7 +32,7 @@ export GATLING_HOME GATLING_CONF
 echo "GATLING_HOME is set to ${GATLING_HOME}"
 
 DEFAULT_JAVA_OPTS="-server"
-DEFAULT_JAVA_OPTS="${DEFAULT_JAVA_OPTS} -Xmx1G"
+DEFAULT_JAVA_OPTS="${DEFAULT_JAVA_OPTS} -Xmx4G"
 DEFAULT_JAVA_OPTS="${DEFAULT_JAVA_OPTS} -XX:+UseG1GC -XX:MaxGCPauseMillis=30 -XX:G1HeapRegionSize=16m -XX:InitiatingHeapOccupancyPercent=75 -XX:+ParallelRefProcEnabled"
 DEFAULT_JAVA_OPTS="${DEFAULT_JAVA_OPTS} -XX:+PerfDisableSharedMem -XX:+AggressiveOpts -XX:+OptimizeStringConcat"
 DEFAULT_JAVA_OPTS="${DEFAULT_JAVA_OPTS} -XX:+HeapDumpOnOutOfMemoryError"
